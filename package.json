@@ -14,18 +14,19 @@
   "bugs": "https://github.com/sigged/react-app-rewire-unplug/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sigged/react-app-rewire-unplug.git"
+    "url": "git+https://github.com/sigged/react-app-rewire-unplug.git"
   },
   "main": "index.js",
+  "files": ["index.js", "LICENSE", "README.md"],
   "dependencies": {},
   "devDependencies": {
-    "eslint": "^4.7.0",
+    "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-jest": "^21.17.0",
-    "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.2",
     "jest": "^23.1.0",
     "webpack": "^4.12.0"
