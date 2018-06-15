@@ -1,0 +1,11 @@
+{
+    "extends": ["standard"],
+    "plugins": ["jest"],
+    "rules": {
+        "quotes": [2, "double", { "avoidEscape": true }]
+    },
+    "env": {
+        "node": true,
+        "jest/globals": true
+    }
+}
