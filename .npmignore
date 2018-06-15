@@ -1,0 +1,6 @@
+# tests and linting
+tests
+.eslintrc
+
+# github specifics
+.github
