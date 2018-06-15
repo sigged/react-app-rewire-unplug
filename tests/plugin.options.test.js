@@ -1,6 +1,14 @@
 const rewireRemovePlugins = require("../index")
 const testconfigs = require("./testdata")
 
+test("Allow non existing pluginnames", () => {
+  const config = rewireRemovePlugins(testconfigs.configWithPlugins, null, {
+    pluginNames: ["LimitChunkCountPlugin", "IgnorePlugin", "NonExistentPlugin"]
+  })
+  expect(config.plugins.length).toBe(1)
+  expect(config.plugins[0].constructor.name).toBe("AggressiveMergingPlugin")
+})
+
 test("Deals with null env argument", () => {
   const config = rewireRemovePlugins(testconfigs.configWithPlugins, null, {})
   expect(config.plugins.length).toBe(

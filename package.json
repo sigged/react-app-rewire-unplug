@@ -17,7 +17,11 @@
     "url": "git+https://github.com/sigged/react-app-rewire-unplug.git"
   },
   "main": "index.js",
-  "files": ["index.js", "LICENSE", "README.md"],
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "dependencies": {},
   "devDependencies": {
     "eslint": "^4.19.1",
